@@ -4,7 +4,10 @@ cpybca
 :Author: Christoforus Surjoputro <cs_sanmar@yahoo.com>
 :Date: $Date: 2017-06-24 $
 :Version: $Version: 0.1.0 $
-:license: MIT License
+:License: MIT License
+
+.. image:: https://travis-ci.org/3mp3ri0r/cpybca.svg?branch=develop
+    :target: https://travis-ci.org/3mp3ri0r/cpybca
 
 .. contents:: Table of content
 
@@ -16,7 +19,7 @@ Introduction
 Python version
 --------------
 
-This module work on python 3.2+. Fully tested on python 3.5.2.
+This module work on python 3.3+. Fully tested on python 3.5.2.
 
 How to install
 ==============
