@@ -1,0 +1,20 @@
+image: python:3.6
+
+before_script:
+  - apt-get update -yqqq
+  - apt-get install -y python3-pip
+  - pip3 install -r requirement.txt
+
+stages:
+  - build
+  - test
+  - deploy
+
+testing:
+  stage: test
+  script:
+    - nosetests
+  only:
+    - develop
+  tags:
+    - docker
