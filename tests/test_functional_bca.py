@@ -221,7 +221,8 @@ class TestFunctionalBca(unittest.TestCase):
         source_account_number = self.config.get('account', 'account_number')
         beneficiary_account_number = self.config.get('account', 'beneficiary_account_number')
         transaction_id = '00000021'
-        transaction_date = str(datetime.date.today())
+        transaction_date = str(datetime.datetime.now(
+            datetime.timezone(datetime.timedelta(0, 25200), 'WIB')))
         reference_id = '43287/DP/2017'
         amount = '100000.00'
         currency_code = 'IDR'
