@@ -10,12 +10,12 @@ class Bca():
     ''' Module to integrate with BCA API.
     '''
 
-    def __init__(self, api_key, api_secret):
+    def __init__(self, api_key, api_secret, host='https://sandbox.bca.co.id'):
         self.api_key = api_key
         self.api_secret = api_secret
         self.access_token = ''
 
-        self.host = 'https://sandbox.bca.co.id'
+        self.host = host
         self.oauth_path = '/api/oauth/token'
         self.get_balance_path = '/banking/v2/corporates/{corporate_id}/accounts/{account_number}'
         self.get_statement_path = '/banking/v2/corporates/{corporate_id}/accounts/' \

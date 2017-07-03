@@ -6,6 +6,9 @@ cpybca
 :Version: $Version: 0.1.0 $
 :License: MIT License
 
+.. role:: python(code)
+   :language: python
+
 .. image:: https://travis-ci.org/3mp3ri0r/cpybca.svg?branch=develop
     :target: https://travis-ci.org/3mp3ri0r/cpybca
 
@@ -30,23 +33,23 @@ How to install
 How to use
 ==========
 
-1. Import cpybca to your project by doing this :python3:`from cpybca.bca import Bca`.
-2. Initiate connection to BCA API server by doing this :python3:`bca = BCA('YOUR_API_KEY', 'YOUR_API_SECRET')`.
-3. Sign in to BCA API server by doing this :python3:`bca.sign_in('YOUR_CLIENT_ID', 'YOUR_CLIENT_SECRET')`.
-4. Do action you want by calling :python3:`Bca` function.
+1. Import cpybca to your project by doing this :python:`from cpybca.bca import Bca`.
+2. Initiate connection to BCA API server by doing this :python:`bca = BCA('YOUR_API_KEY', 'YOUR_API_SECRET', 'YOUR_BCA_HOST')`.
+3. Sign in to BCA API server by doing this :python:`bca.sign_in('YOUR_CLIENT_ID', 'YOUR_CLIENT_SECRET')`.
+4. Do action you want by calling :python:`Bca` function.
 
 Get balance
 -----------
 
 You can get account balance by doing this:
 
-.. code-block:: python3
+.. code-block:: python
 
     bca.get_balance('CORPORATE_ID', 'ACCOUNT_NUMBER')
 
 You can get multiple account balance by doing this:
 
-.. code-block:: python3
+.. code-block:: python
 
     bca.get_balance('CORPORATE_ID', ['ACCOUNT_NUMBER1', 'ACCOUNT_NUMBER2'])
 
@@ -55,7 +58,7 @@ Get statement
 
 You can get account statement or history transaction by doing this:
 
-.. code-block:: python3
+.. code-block:: python
 
     bca.get_statement('CORPORATE_ID', 'ACCOUNT_NUMBER', 'START_DATE', 'END_DATE')
 
@@ -69,9 +72,9 @@ Transfer fund
 
 You can get account statement or history transaction by doing this:
 
-.. code-block:: python3
+.. code-block:: python
 
-    bca.get_statement('CORPORATE_ID', 'SOURCE_ACCOUNT_NUMBER', 'BENEFICIARY_ACCOUNT_NUMBER', 'TRANSACTION_ID', 'TRANSACTION_DATE', 'REFERENCE_ID', 'AMOUNT', 'CURRENCY_CODE', 'REMARK1', 'REMARK2')
+    bca.transfer('CORPORATE_ID', 'SOURCE_ACCOUNT_NUMBER', 'BENEFICIARY_ACCOUNT_NUMBER', 'TRANSACTION_ID', 'TRANSACTION_DATE', 'REFERENCE_ID', 'AMOUNT', 'CURRENCY_CODE', 'REMARK1', 'REMARK2')
 
 Note:
 
@@ -93,12 +96,6 @@ To-do
 1. Change host to real BCA API server, not the sandbox. (Version 1.0.0)
 2. Connect to BCA sakuku, so you can create payment and check payment status.
 3. Connect to general information like foreign exchange rate, deposit rate, and Nearest ATM.
-
-.. role:: html(code)
-   :language: html
-
-.. role:: python3(code)
-   :language: python3
 
 .. _`cpybca`: https://gitlab.com/3mp3ri0r/cpybca
 .. _`issue`: https://gitlab.com/3mp3ri0r/cpybca/issues
