@@ -10,22 +10,3 @@ install: "pip install -r requirement.txt"
 
 script: nosetests
 
-deploy:
-  - provider: pypi
-    distributions: "sdist bdist_wheel"
-    server: https://test.pypi.org
-    user: 3mp3ri0r
-    password:
-      secure: pNnWlv/gw1cF8E9adEe0reZIcD1xgC7A8i6zYXPaBN6PvQbAIdpc9kzvyGk2oosf7qVfyPxmQkGwpvEDJVkD8klO0q4hPMtFt35oCutcITQOBBaSr9B8/qAjx02dU14HAhbruYTFZdjtViEHciFIRpsaTjhCYwKnyoYeDpzo4V7VhtciWp5hdooT5JW3r43IwFzxxc92QLnsIL38da/Qc2VCD6kYRGky0ugMLUsTpGB6NRMhe5zDtrH+iVIdw4J9/DP2UMA9G8ej7bMI3hTGZ0xWcypdgsK/FuO3Nzluspxujmzn1mRvlMVUc0pABhDfLQkOeniyW/hd89RohrSD28rbtk10iQiW+ixM+hbd1OKAXDPHfaXCbIru6l2p+ljl3XZJH8OfOInsgYiBcymsi6yARCU5TUrWhruQGzNTxEnz8/nEZI7IuE4gcYrkG8X/stykM7MVZIj3jZRePhEQ9gkbupbaeRzd0jTnTrCzUoOSIFRXX6vvMkveA/YlDq6OhedO8GFr6CxfLWNQ/8+C4G/UzWk019bCvAlM2bV3AAcAL1PhE9ha8deRIG8dcwPchS9DBNN5SjqgLmbF4ZXnXR0qbJilQ5ySLQSEF4pUrqNccDrst7eOnv31qKNuJ1butI2T4xKaYFimynJpmLhVxbpVuC5N8mSaxjFxOkgsAwg=
-    on:
-      branch: master
-      tags: false
-
-  - provider: pypi
-    distributions: "sdist bdist_wheel"
-    user: 3mp3ri0r
-    password:
-      secure: pNnWlv/gw1cF8E9adEe0reZIcD1xgC7A8i6zYXPaBN6PvQbAIdpc9kzvyGk2oosf7qVfyPxmQkGwpvEDJVkD8klO0q4hPMtFt35oCutcITQOBBaSr9B8/qAjx02dU14HAhbruYTFZdjtViEHciFIRpsaTjhCYwKnyoYeDpzo4V7VhtciWp5hdooT5JW3r43IwFzxxc92QLnsIL38da/Qc2VCD6kYRGky0ugMLUsTpGB6NRMhe5zDtrH+iVIdw4J9/DP2UMA9G8ej7bMI3hTGZ0xWcypdgsK/FuO3Nzluspxujmzn1mRvlMVUc0pABhDfLQkOeniyW/hd89RohrSD28rbtk10iQiW+ixM+hbd1OKAXDPHfaXCbIru6l2p+ljl3XZJH8OfOInsgYiBcymsi6yARCU5TUrWhruQGzNTxEnz8/nEZI7IuE4gcYrkG8X/stykM7MVZIj3jZRePhEQ9gkbupbaeRzd0jTnTrCzUoOSIFRXX6vvMkveA/YlDq6OhedO8GFr6CxfLWNQ/8+C4G/UzWk019bCvAlM2bV3AAcAL1PhE9ha8deRIG8dcwPchS9DBNN5SjqgLmbF4ZXnXR0qbJilQ5ySLQSEF4pUrqNccDrst7eOnv31qKNuJ1butI2T4xKaYFimynJpmLhVxbpVuC5N8mSaxjFxOkgsAwg=
-    on:
-      branch: master
-      tags: true

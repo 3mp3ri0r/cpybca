@@ -27,9 +27,8 @@ This module work on python 3.3+. Fully tested on python 3.5.2.
 How to install
 ==============
 
-.. code-block:: bash
-
-    pip install Cpybca
+1. Clone or download this repo https://gitlab.com/3mp3ri0r/cpybca.git.
+2. Move this entire project to your project's directory.
 
 How to use
 ==========
