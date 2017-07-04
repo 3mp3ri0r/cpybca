@@ -9,7 +9,7 @@ cpybca
 .. role:: python(code)
    :language: python
 
-.. image:: https://travis-ci.org/3mp3ri0r/cpybca.svg?branch=develop
+.. image:: https://travis-ci.org/3mp3ri0r/cpybca.svg?branch=master
     :target: https://travis-ci.org/3mp3ri0r/cpybca
 
 .. contents:: Table of content
