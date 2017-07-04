@@ -2,8 +2,8 @@
 cpybca
 ======
 :Author: Christoforus Surjoputro <cs_sanmar@yahoo.com>
-:Date: $Date: 2017-06-24 $
-:Version: $Version: 0.1.0 $
+:Date: $Date: 2017-07-04 $
+:Version: $Version: 1.0.0 $
 :License: MIT License
 
 .. role:: python(code)
@@ -27,8 +27,9 @@ This module work on python 3.3+. Fully tested on python 3.5.2.
 How to install
 ==============
 
-1. Clone or download this repo https://gitlab.com/3mp3ri0r/cpybca.git.
-2. Move this entire project to your project's directory.
+.. code-block:: bash
+
+    pip install Cpybca
 
 How to use
 ==========
@@ -89,13 +90,6 @@ How to contribute
 =================
 
 Just create an `issue`_ when you encounter any problem.
-
-To-do
-=====
-
-1. Change host to real BCA API server, not the sandbox. (Version 1.0.0)
-2. Connect to BCA sakuku, so you can create payment and check payment status.
-3. Connect to general information like foreign exchange rate, deposit rate, and Nearest ATM.
 
 .. _`cpybca`: https://gitlab.com/3mp3ri0r/cpybca
 .. _`issue`: https://gitlab.com/3mp3ri0r/cpybca/issues
