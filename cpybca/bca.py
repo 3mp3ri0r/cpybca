@@ -4,7 +4,7 @@ import datetime
 import hashlib
 import hmac
 import json
-import urllib
+import urllib.request
 
 class Bca():
     ''' Module to integrate with BCA API.
