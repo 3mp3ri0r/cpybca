@@ -3,7 +3,7 @@ cpybca
 ======
 :Author: Christoforus Surjoputro <cs_sanmar@yahoo.com>
 :Date: $Date: 2017-07-04 $
-:Version: $Version: 1.0.0 $
+:Version: $Version: 1.2.0 $
 :License: MIT License
 
 .. role:: python(code)
@@ -22,7 +22,7 @@ Introduction
 Python version
 --------------
 
-This module work on python 3.3+. Fully tested on python 3.5.2.
+This module work on python 3.4+. Fully tested on python 3.5.2.
 
 How to install
 ==============
